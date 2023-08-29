@@ -1,0 +1,183 @@
+$max-width: 50%;
+
+.header {
+    min-width: 320px;
+    max-width: 1380px;
+    width: 100%;
+    background-color: #27262A;
+    padding: 31px 0;
+
+    .header_wrapper {
+        min-width: 320px;
+        max-width: 1200px;
+        width: 100%;
+        padding: 0 16px;
+        display: flex;
+        justify-content: space-around;
+        box-sizing: border-box;
+
+        .logo_box {
+            display: flex;
+            position: relative;
+            min-width: 43px;
+            max-width: 164px;
+
+            .header_logo {
+                max-width: 43px;
+                width: 100%;
+                z-index: 1;
+            }
+
+            .header_logo_hover {
+                max-width: 43px;
+                width: 100%;
+                z-index: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            .header_logo_title {
+                color: $color_header;
+                font-size: 24px;
+                font-weight: $font_bold;
+                line-height: 16px;
+                text-transform: uppercase;
+                display: none;
+            }
+        }
+
+        .logo_box:hover {
+            .header_logo_title {
+                color: $title_color;
+            }
+
+            .header_logo_hover {
+                z-index: 2;
+            }
+        }
+
+        .header_buy_btn {
+            margin-top: 6px;
+            padding: 11px 10px;
+            height: 37px;
+            width: 119px;
+            margin-top: 6px;
+            color: $title_color;
+            font-size: 15px;
+            font-weight: $font_bold;
+            border: 1px solid $color_header;
+            background-color: $color_header;
+            border-radius: 40px;
+            box-sizing: border-box;
+            transition: 0.5s
+        }
+
+        .header_buy_btn:hover {
+            color: $color_header;
+            background-color: $title_color;
+        }
+        
+        .menu_btn {
+            margin-top: 10px;
+            width: 26px;
+            height: 26px;
+            position: relative;
+            z-index: 2;
+            cursor: pointer;
+            overflow: hidden;
+
+            .header_menu_btn_line {
+                width: 27px;
+                height: 3px;
+                background-color: #FFF;
+                position: absolute;
+                top: 9px;
+                right: 0px;
+                transition: all 0.5s;
+                border-radius: 5px;
+            }
+
+            .header_menu_btn_line:first-child {
+                width: 15px;
+                top: 0;
+            }
+
+            .header_menu_btn_line:last-child {
+                top: 18px;
+            }
+
+            &.active .header_menu_btn_line:first-child {
+                display: none;
+            }
+
+            &.active .header_menu_btn_line {
+                top: 50%;
+                transform:  rotate(45deg);
+            }
+
+            &.active .header_menu_btn_line:last-child {
+                top: 50%;
+                transform:  rotate(-45deg); 
+            }
+        }
+
+        .menu_list {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 105px;
+            right: -300px;
+            background-color: #333333;
+            width: 293px;
+            height: 350px;
+            z-index: 3;
+            transition: 0.5s;
+
+            &.active {
+                right: calc($max-width - 146px);
+            }
+
+            .menu_item {
+                width: 100%;
+                height: 77px;
+                padding-top: 27px;
+                padding-bottom: 24px;
+                padding-left: 36px;
+                border-bottom: 1px solid #3B3B3B;
+                box-sizing: border-box;
+                position: relative;
+
+                .menu_link {
+                    color: $title_color;
+                    font-size: 26px;
+                    font-style: normal;
+                    font-weight: $font_defoult;
+                    line-height: 26px;
+                    text-decoration: none;
+                    transition: all 0.5s;
+                }
+            }
+
+            .menu_item:hover {
+                .menu_item {
+                    color: $color_header;
+                }
+            
+                .menu_link {
+                    color: $color_header;
+                }
+            
+                .menu_link::before {
+                    content: '';
+                    width: 8px;
+                    height: 53px;
+                    background-color: $color_header;
+                    position: absolute;
+                    top: 12px;
+                    left: 5px;
+                }
+            }
+        }
+    }
+}
