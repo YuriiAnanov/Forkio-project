@@ -76,10 +76,10 @@ task('serve', () => {
 });
 
 task('watchers', () => {
-	watch('./src/**/*.html', parallel('moveHTML')).on('change', browserSync.reload);
+	watch('./src/views/**/*.html', parallel('moveHTML')).on('change', browserSync.reload);
 	watch('./src/styles/**/*.scss', parallel('styleCSS')).on('change', browserSync.reload);
 	watch('./src/js/*.js', parallel('scripts')).on('change', browserSync.reload);
-	watch('./src/**/*.html', parallel('moveHTML')).on('change', browserSync.reload);
+	watch('./src/views/**/*.html', parallel('moveHTML')).on('change', browserSync.reload);
 });
 
 task('build', series('clean-dist', 'styleCSS', 'moveHTML', 'moveIMG', 'scripts'));
