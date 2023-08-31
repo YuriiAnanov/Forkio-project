@@ -38,7 +38,7 @@ task('styleCSS', () => {
 })
 
 task('moveHTML', () => {
-	return src("./src/views/**/*.html")
+	return src("./src/views/*.html")
 	.pipe(fileInclude()) 
 	.pipe(prettify({ indent_size: 2 }))
 	.pipe(dest("./dist"))

@@ -1,33 +1,63 @@
 .section_editor {
-    padding-bottom: 88px;
+    padding-bottom: 70px;
+    @media (max-width: 993px) {
+        padding-bottom: 98px;
+    }
+    @media (max-width: 481px) {
+        padding-bottom: 88px;
+    }
 
     &__content {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-top: 128px;
+        padding-top: 130px;
+        @media (max-width: 993px) {
+            padding-top: 158px;
+        }
+        @media (max-width: 481px) {
+            padding-top: 128px;
+        }
 
         &__title {
             color: #635C73;
             text-align: center;
             font-family: Montserrat;
-            font-size: 26px;
+            font-size: 54px;
             font-weight: 700;
-            line-height: 28px;
+            line-height: 100%;
             text-transform: uppercase;
+            @media (max-width: 993px) {
+                font-size: 42px;
+                max-width: 598px;
+            }
+            @media (max-width: 481px) {
+                font-size: 26px;
+                max-width: 273px;
+            }
         }
 
         &__text {
             color: #323232;
             text-align: center;
             font-family: Lato;
-            font-size: 14px;
-            font-style: normal;
+            font-size: 21px;
             font-weight: 400;
-            line-height: 20px;
-            padding-top: 27px;
-            width: 90%;
+            line-height: 152%;
+            padding-top: 35px;
+            max-width: 861px;
+            @media (max-width: 993px) {
+                padding-top: 33px;
+                max-width: 689px;
+            }
+            @media (max-width: 481px) {
+                font-size: 14px;
+                padding-top: 27px;
+                max-width: 276px;
+                line-height: 142%;
+            }
+
         }
     }
 }
@@ -45,22 +75,30 @@
         justify-content: center;
         align-items: center;
         position: absolute;
-        gap: 12px;
-        top: -25px;
+        gap: 19px;
+        top: -26px;
+        @media (max-width: 481px) {
+            gap: 12px;
+        }
 
         &__text {
             color: $title_color;
             text-align: center;
             font-family: Montserrat;
-            font-size: 18px;
+            font-size: 21px;
             font-weight: $font_bold;
-            line-height: 42px;
+            line-height: 58px;
             border: 2px solid $color_header;
             border-radius: 40px;
             background: $color_header;
-            padding: 0 30px;
+            padding: 0 61px;
             cursor: pointer;
             transition: .5s;
+            @media (max-width: 481px) {
+                font-size: 18px;
+                line-height: 42px;
+                padding: 0 30px;
+            }
 
             &:hover {
                 color: $color_header;
@@ -74,7 +112,81 @@
             font-family: Montserrat;
             font-size: $low_size;
             font-weight: $font_defoult;
-            line-height: 14px;
+            line-height: 15px;
+        }
+    }
+}
+
+.github_wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 22px;
+    @media (max-width: 993px) {
+        padding-top: 32px;
+    }
+    @media (max-width: 481px) {
+        padding-top: 36px;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        max-width: 251px;
+    }
+
+    .github_box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    
+        &__btn {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            line-height: 22px;
+            border: 1px solid #848e97;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+            font-family: Montserrat;
+            font-weight: $font_bold;
+            font-size: 12px;
+            color: #000;
+            background: linear-gradient(to bottom, #f2f7f8, #ccc);
+            height: 24px;
+            width: 72px;
+            text-decoration: none;
+            transition: background 0.5s ease;
+    
+            &:hover {
+                background: #FFF;
+            }
+    
+            &__content {
+                display: flex;
+                align-items: center;
+            }
+    
+            &__icon {
+                padding-right: 4px;
+            }
+        }
+    
+        &__counter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #848e97;
+            border-left: none;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            font-family: Montserrat;
+            font-weight: $font_bold;
+            font-size: 11px;
+            line-height: 22px;
+            color: #000;
+            height: 24px;
+            padding: 0 5px;
         }
     }
 }
