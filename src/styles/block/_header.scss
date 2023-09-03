@@ -24,12 +24,14 @@
             width: 164px;
             height: 41px;
             position: relative;
+            transition: 0.5s;
 
             .header_logo_hover {
                 position: absolute;
                 top: 0;
                 left: 0;
                 z-index: -1;
+                transition: 0.5s;
             }
 
             .header_logo_title {
@@ -38,6 +40,7 @@
                 color: $color_header;
                 font-weight: $font_bold;
                 font-size: 24px;
+                transition: 0.5s;
             }
         }
 
@@ -60,6 +63,7 @@
 
             .menu_item {
                 margin-right: 48px;
+                transition: 0.5s;
 
                 .menu_link {
                     color: $color_header;
@@ -67,6 +71,7 @@
                     font-size: 16px;
                     text-decoration: none;
                     line-height: 17px;
+                    transition: 0.5s;
                 }
             }
 
@@ -106,6 +111,7 @@
             background-color: $color_header;
             box-sizing: border-box;
             margin: 0;
+            transition: 0.5s;
         }
 
         .header_buy_btn:hover {
