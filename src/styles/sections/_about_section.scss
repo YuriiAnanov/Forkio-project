@@ -2,12 +2,15 @@
     width: 100%;
     background-image: url(../../images/about/back_ground.png);
     background-repeat: no-repeat;
+    background-position: center;
     padding-top: 98px;
-    padding-bottom: 20px;
-    max-width: 1380px;
     min-width: 320px;
     width: 100%;
+    min-height: 790px;
+    height: 100%;
     box-sizing: border-box;
+    background-size: cover;
+    overflow: hidden;
 
     .about_wrapper {
         max-width: 1200px;
@@ -15,6 +18,7 @@
         width: 100%;
         margin: 0 auto;
         box-sizing: border-box;
+        padding-bottom: 10px;
 
         .about_title {
             text-align: center;
@@ -22,29 +26,44 @@
             color: $title_color;
             font-weight: $font_bold;
             font-style: normal;
+
+            @media (max-width:992px) and (min-width: 481px) {
+                font-size: 42px;
+            }  
+
+            @media (max-width:480px) and (min-width: 320px) {
+                font-size: 36px;
+            }
         }
 
         .about_cards_box {
             width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            margin-top: 75px;;
-            margin-bottom: 118px;
+            padding: 0 10px;
+            box-sizing: border-box;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 100px;
+            margin: 81px 0 118px;
+
+            @media (max-width:992px) and (min-width: 481px) {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 45px;
+                margin: 88px 0 57px;
+            }  
+
+            @media (max-width:480px) and (min-width: 320px) {
+                margin: 50px 0 37px;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 35px;
+                padding: 0 35px;
+            }
 
             .about_card {
-                width: 324px;
-                margin-right: 114px;
-                margin-bottom: 102px;
+                box-sizing: border-box;
 
                 .about_icon {
-
-                    &:nth-of-type(1), &:nth-of-type(4) {
-                        margin-left: 40px;
-                    }
-
-                    &:nth-of-type(3), &:nth-of-type(6) {
-                        margin-left: 60px;
-                    }
+                    margin-left: 50%;
+                    transform: translate(-50%);
                 }
 
                 .about_card_text {
@@ -67,21 +86,34 @@
         }
 
         .about_footer {
-            color: #A291A5;
-            font-size: $low_size;
-            font-weight: $font_defoult;
-            width: 887px;
+		    font-size: 14px;
+		    line-height: 21px;
+		    text-align: center;
+		    color: #a291a5;
+            max-width: 887px;
+		    width: 100%;
             margin: 0 auto;
+            position: relative;
             text-align: center;
-            margin-bottom: 20px;
-        }
 
-        .about_footer::after {
-            bottom: 18px;
-            left: 20px;
-            height: 1px;
-            width: 700px;
-            background-color: #645766;
+            &::after {
+                content: "";
+                width: 80%;
+                height: 2px;
+                background: #645766;
+                position: absolute;
+                bottom: -5px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            @media (max-width:992px) and (min-width: 481px) {
+                padding: 0 10px;
+            }  
+
+            @media (max-width:480px) and (min-width: 320px) {
+                padding: 0 10px;
+            }
         }
     }
 }
