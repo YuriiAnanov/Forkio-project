@@ -1,9 +1,9 @@
 .section_editor {
     padding-bottom: 70px;
-    @media (max-width: 993px) {
+    @media (max-width: 992px) {
         padding-bottom: 98px;
     }
-    @media (max-width: 481px) {
+    @media (max-width: 480px) {
         padding-bottom: 88px;
     }
 
@@ -13,10 +13,10 @@
         justify-content: center;
         align-items: center;
         padding-top: 130px;
-        @media (max-width: 993px) {
+        @media (max-width: 992px) {
             padding-top: 158px;
         }
-        @media (max-width: 481px) {
+        @media (max-width: 480px) {
             padding-top: 128px;
         }
 
@@ -25,34 +25,34 @@
             text-align: center;
             font-family: Montserrat;
             font-size: 54px;
-            font-weight: 700;
+            font-weight: $font_bold;
             line-height: 100%;
             text-transform: uppercase;
-            @media (max-width: 993px) {
+            @media (max-width: 992px) {
                 font-size: 42px;
                 max-width: 598px;
             }
-            @media (max-width: 481px) {
+            @media (max-width: 480px) {
                 font-size: 26px;
                 max-width: 273px;
             }
         }
 
         &__text {
-            color: #323232;
+            color: $space_grey;
             text-align: center;
             font-family: Lato;
             font-size: 21px;
-            font-weight: 400;
+            font-weight: $font_defoult;
             line-height: 152%;
             padding-top: 35px;
             max-width: 861px;
-            @media (max-width: 993px) {
+            @media (max-width: 992px) {
                 padding-top: 33px;
                 max-width: 689px;
             }
-            @media (max-width: 481px) {
-                font-size: 14px;
+            @media (max-width: 480px) {
+                font-size: $low_size;
                 padding-top: 27px;
                 max-width: 276px;
                 line-height: 142%;
@@ -77,7 +77,7 @@
         position: absolute;
         gap: 19px;
         top: -26px;
-        @media (max-width: 481px) {
+        @media (max-width: 480px) {
             gap: 12px;
         }
 
@@ -94,7 +94,7 @@
             padding: 0 61px;
             cursor: pointer;
             transition: .5s;
-            @media (max-width: 481px) {
+            @media (max-width: 480px) {
                 font-size: 18px;
                 line-height: 42px;
                 padding: 0 30px;
@@ -123,10 +123,10 @@
     justify-content: center;
     gap: 10px;
     padding-top: 22px;
-    @media (max-width: 993px) {
+    @media (max-width: 992px) {
         padding-top: 32px;
     }
-    @media (max-width: 481px) {
+    @media (max-width: 480px) {
         padding-top: 36px;
         flex-wrap: wrap;
         row-gap: 20px;
