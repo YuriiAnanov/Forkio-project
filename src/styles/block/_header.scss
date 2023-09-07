@@ -25,6 +25,7 @@
             height: 41px;
             position: relative;
             transition: 0.5s;
+            cursor: pointer;
 
             .header_logo_hover {
                 position: absolute;
@@ -111,7 +112,7 @@
             background-color: $color_header;
             box-sizing: border-box;
             margin: 0;
-            transition: 0.5s;
+            transition: 0.5s;cursor: pointer;
         }
 
         .header_buy_btn:hover {
@@ -204,12 +205,24 @@
                 box-sizing: border-box;
                 display: none;
 
+                .menu_item:hover {
+                        padding-left: 0;
+                        .menu_link {
+                            border-left: 8px solid $title_color;
+                            padding-left: 35px;
+                            line-height: 26px;
+                            font-size: 18px;
+                        }
+                }
+
                 &.active {
                     top: 250%;
                     left:50%;
                     transform:translate(-50%, -50%);
                     display: block;
                 }
+
+
             }
 
             .menu_btn {
