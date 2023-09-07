@@ -96,6 +96,7 @@
             margin: 0 auto;
             position: relative;
             text-align: center;
+            box-sizing: border-box;
 
             &::after {
                 content: "";
