@@ -42,6 +42,7 @@
                 font-weight: $font_bold;
                 font-size: 24px;
                 transition: 0.5s;
+                text-transform: uppercase;
             }
         }
 
@@ -52,7 +53,6 @@
 
             .header_logo_title {
                 color: $title_color;
-                text-transform: uppercase;
             }
         }
 
