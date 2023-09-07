@@ -16,3 +16,4 @@ pages:
   environment:
     name: production/${CI_PROJECT_NAME}/${CI_COMMIT_REF_NAME}
     url: https://${CI_PROJECT_NAMESPACE}.gitlab.io/${CI_PROJECT_NAME}
+    
