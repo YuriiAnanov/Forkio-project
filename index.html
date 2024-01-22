@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.min.css">
+    <title>Step Project Forkio</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_wrapper">
+        <div class="logo_box">
+          <svg width="43" height="42" class="header_logo" viewBox="0 0 43 42" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <rect y="0.5" width="43" height="41" fill="url(#pattern0)" />
+            <defs>
+              <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                <use xlink:href="#image0_4_242" transform="scale(0.0232558 0.0243902)" />
+              </pattern>
+              <image id="image0_4_242" width="43" height="41" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAApCAYAAACsldDLAAADPElEQVRYhc2Zv2sVQRDHv0nkICAEnjwIBOxESBXQJiJYiFY2kQRBULAx+AckYKNoZWMhQkD7BAVLIZIiYKNVMBAQBCEgBAIPUgmBQFAmfCdM9u3e7t5tfnzhuHd7y+7n5mZn9uYNvH7xCYX0AcA9AL8A/AWwCWAHwBaAbQA9AH8AbADYazLluUKgFwkquszzlUDf7wCuNZlksBlbn7qmQSy6VtM39BBRHQfsLICrAAZ4XOL1Ku9vN52klBuMmt8uzG+eK557TSc5DsuGLNeN3I/KBzsH4J9zvI0MpJbdZwTIhV3wzDnndvLBPvG03Y/AKojAPgPwGMADLiY5RgB02MfnBr7x+zh8PjvEs1hIg/DHCKxatiJsnXyWvWtC3zQfbMjtVLfAtriyU9RJ7IeAZVdNtJgMjVcqGozxvMQH1MQwQQvdosVwFkKX9UdJtZoU9LxfArZE6OqYGBoCsXH4VOOsjbEhEBstThW2LnupFLYxKE7QsqOR+0lyYW84lioF2yTVjpLnUBb2OoBls1i+ZAyqKuEGOm9FnkNghRXQFQDDvH4PYD4RVkEkZO0WgJ3n/CDPMvkOYNWiFjQ1cyHhFXdN6kx1g1kfsMAuAjjfEBTGDUK7LZs6cxaYBRa+xUHn1XWNz6ZKLbsV6D9mfufAVs7i3RXYGTPIFC2dA5xj2VQ3qMgxxWvhmxnkp/FtAzzNjn1btMCgIxGQ3FQ7xPl1L7FDvg2NButsUOtMc/ceU06MrXsgqwUH9Cb5jsRZBVYfnkwYOCfG1oU2K513lzzres/NYGuZiyAn1eZuDXtw6g9t9wY5lg0twGS1hU2JobHQdmKwGkNTPsHPjGV7BHZVmT6NP2dUpXw25AJNU61XbWFjuymbaltbtu7rViZ6x8LvEuuqrmzZaMLGRCrVspOsylTOA0Zh1fc6LAOBA13w9FXLSl3gh2n/yaA+bNrqYD97Cht9a8DnBm88ZfRQ+Wgz0D7OGte4aasLXe74e+Q4orb/Kcir/+ZY0KdV5vhWarvAxEcfRvqINe60BUWhT3GBeRm494r75ZQNTFSlKt/PTXlUJD73CMDTQuMfqFRhTiTuIKFMQo+Afi04NgDgP/+ztxYsrUdaAAAAAElFTkSuQmCC" />
+            </defs>
+          </svg>
+          <svg width="43" height="42" class="header_logo_hover" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path fill="url(#a)" d="M0 .5h43v41H0z" />
+            <defs>
+              <pattern id="a" patternContentUnits="objectBoundingBox" width="1" height="1">
+                <use xlink:href="#b" transform="scale(.02326 .02439)" />
+              </pattern>
+              <image id="b" width="43" height="41" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAApCAYAAACsldDLAAADVElEQVRYhc1Zz2sTQRT+TGXBkxAJBAKCghRykIJeKgEPoicvlRRBUBQP/gUFvQie9KgIgVwFi1LvFg8BERQPhUKhIIolQqAQLEJLS4thZMI39nWyszu7O/3xwbCbmbdvvry8+Wb25ZhSCoHwBsBNAN8AbABYAbAGoAdgFUAfwC8ASwB28kwZiuxpAF1P2y8ALuWZpJTnoRhURJeO6EKC7YW8k+wH2QcALupfje0cP3c4vpp3kuPFeQ5RFfc2mR+8Rrz2806yH5F1Ra6SMp6KOLIzAJTVXqY4MpEdUAGykm3FzDljG8WpwU8AZ6w+TeBUAtlXAG5Tkp5RrrYALHNcp8If3uvxR9bzeuyk1acX6lnZEZezY4LgO96/TSAKEVmdl49TbOMie4MardEEUBY8Eska9LiyfVD2tINjgXWEWky6/IVSgxqvs/yC4/w8wQhdZcRwFKTLRKLPrdZsCuY6CEE2hHSVhYa6iEgdPlSdlRrrImJsBodNNmn3MjBkcxPFAUa2mjLuBZvsZStSocjm2Wqr5PMfkmwDwHuxWOYzODUIkQZm3oh8dgnr7VYp1VBKbapdtNnv01p8aj3B9i9tnnv6bAsum+QHQ3Q9J1Hd5vjcd8d4Rfh+mMGvJKz5NXRntwBR3T7x2a+O8XHh/35G35Jwt8TTkcytaCSLkmHyseewqon7LGoQWYt3S5OdFk6mALzOSNgsMNc5Vh5KfNUgIo8pftb8pkt8Nb4mCDdpOHJEczg159BQW+0Y5zdniTXyWzLStcgOE50mT+9pyKKxSV9IomURvUJ+e3TWEDY5POnhOIvGbljrwwUz7xb5LBo7ewdbyLgIsmy1WY+GfVj1h6JngyyRdS1AbxQlK1d6Ws66pO3AyBoN9XkFPzKR7ZOwjUjY5H6dMQiVs64U8EkTbxQlm3b0k1tt4cgmvd3qidqsssyyrmpDlo0mpCYSvpHV2nqLaVNzGRUtH207zhHLFPUTAOrsO8+tPQ6/YwobI+WjuDR4EVNGd5WPVhz9dRaN66IvSbps/zvksQdFy/T6p//MCCahwz2+EIouMJ2jd1JsdHHvelGiQ+R4M4hrT1Q8ngbyD/MOFqrNCbrbSqm7IYnqFvJ/MJ23Hyg99wB8DOV4CAD/APdLZpa9kD0AAAAAAElFTkSuQmCC" />
+            </defs>
+          </svg>
+          <h1 class="header_logo_title">ForkIO</h1>
+        </div>
+        <ul class="menu_list">
+          <li class="menu_item"><a href="#" class="menu_link">Overview</a></li>
+          <li class="menu_item"><a href="#" class="menu_link">About Fork</a></li>
+          <li class="menu_item"><a href="#" class="menu_link">Buying Options</a></li>
+          <li class="menu_item"><a href="#" class="menu_link">Support</a></li>
+        </ul>
+        <button class="header_buy_btn">Buy Now</button>
+        <div class="menu_btn">
+          <span class="header_menu_btn_line"></span>
+          <span class="header_menu_btn_line"></span>
+          <span class="header_menu_btn_line"></span>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="hero_container">
+        <div class="hero_wrapper">
+          <h2 class="hero_title">Fork App</h2>
+          <p class="hero_sub_title">A real gamechanger in the world of web development</p>
+          <p class="hero_version">v. 2.8 For Mac and Windows</p>
+        </div>
+      </div>
+      <section class="section_editor">
+        <div class="container section_btn">
+          <div class="section_btn__btn-wrap">
+            <button class="section_btn__btn-wrap__text">Download For Free Now</button>
+            <p class="section_btn__btn-wrap__subtext">Unlimited 30-Days Trial Period</p>
+          </div>
+          <div class="section_editor__content">
+            <h2 class="section_editor__content__title">Revolutionary editor</h2>
+            <p class="section_editor__content__text">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue.</p>
+          </div>
+          <div class="github_wrap">
+            <div class="github_box">
+              <a class="github_box__btn" href="#">
+                <span class="github_box__btn__content"><img class="github_box__btn__icon" src="./images/editor/watch-icon.svg" alt="Watch icon" width="18" height="18">Watch</span>
+              </a>
+              <span class="github_box__counter">1,397</span>
+            </div>
+            <div class="github_box">
+              <a class="github_box__btn" href="#">
+                <span class="github_box__btn__content"><img class="github_box__btn__icon" src="./images/editor/star-icon.svg" alt="Watch icon" width="18" height="18">Star</span>
+              </a>
+              <span class="github_box__counter">21,038</span>
+            </div>
+            <div class="github_box">
+              <a class="github_box__btn" href="#">
+                <span class="github_box__btn__content"><img class="github_box__btn__icon" src="./images/editor/fork-icon.svg" alt="Watch icon" width="18" height="18">Fork</span>
+              </a>
+              <span class="github_box__counter">4,391</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="get_section">
+        <div class="container">
+          <div class="get_section__wrap">
+            <h2 class="get_section__title">Here is what you get</h2>
+            <ul class="get_section__cards">
+              <li class="card__item">
+                <div class="card_icon">
+                  <img src="./images/get/icon1.svg" alt="Icon card">
+                </div>
+                <div class="card_content">
+                  <h3 class="card_content__title">Creatred to Make The Web Better</h3>
+                  <p class="card_content__text">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue.</p>
+                </div>
+              </li>
+              <li class="card__item">
+                <div class="card_icon">
+                  <img src="./images/get/icon2.svg" alt="Icon card">
+                </div>
+                <div class="card_content">
+                  <h3 class="card_content__title">Incredibly Powerful Tool</h3>
+                  <p class="card_content__text">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat.</p>
+                </div>
+              </li>
+              <li class="card__item">
+                <div class="card_icon">
+                  <img src="./images/get/icon3.svg" alt="Icon card">
+                </div>
+                <div class="card_content">
+                  <h3 class="card_content__title">Experimental Stuff</h3>
+                  <p class="card_content__text">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat.</p>
+                </div>
+              </li>
+              <li class="card__item">
+                <div class="card_icon">
+                  <img src="./images/get/icon4.svg" alt="Icon card">
+                </div>
+                <div class="card_content">
+                  <h3 class="card_content__title">Creatred to Make The Web Better</h3>
+                  <p class="card_content__text">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat.</p>
+                </div>
+              </li>
+            </ul>
+            <div class="get_section__img">
+              <img class="get_section__img-pic" src="./images/get/editor_img.png" alt="Hello Fork">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about_container">
+        <div class="about_wrapper">
+          <h3 class="about_title">People Are Talking About Fork</h3>
+          <div class="about_cards_box">
+            <div class="about_card">
+              <img src="./images/about/smashing.png" alt="" class="about_icon">
+              <p class="about_card_text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis.</p>
+            </div>
+            <div class="about_card">
+              <img src="./images/about/codres.png" alt="" class="about_icon">
+              <p class="about_card_text">Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum, rhoncus molestie neque ac, mollis eleifend nibh.</p>
+            </div>
+            <div class="about_card">
+              <img src="./images/about/w.png" alt="" class="about_icon">
+              <p class="about_card_text">In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat fringilla, imperdiet nibh. Morbi tempus auctor felis ac vehicula. </p>
+            </div>
+            <div class="about_card">
+              <img src="./images/about/pixel.png" alt="" class="about_icon">
+              <p class="about_card_text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis. </p>
+            </div>
+            <div class="about_card">
+              <img src="./images/about/bloq.png" alt="" class="about_icon">
+              <p class="about_card_text">Praesent ut eros tristique, malesuada lectus vel, lobortis massa. Nulla faucibus lorem id arcu consequat faucibus. </p>
+            </div>
+            <div class="about_card">
+              <img src="./images/about/tnw.png" alt="" class="about_icon">
+              <p class="about_card_text">Fusce pharetra erat id odio blandit, nec  pharetra eros venenatis. Pellentesque porttitor cursus massa et vestibulum.</p>
+            </div>
+          </div>
+          <p class="about_footer">Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis vitae aliquet id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        </div>
+      </section>
+      <section class="subscription_section">
+        <div class="container">
+          <h2 class="subscription_section__title">Fork Subscription Pricing</h2>
+          <ul class="subscription_section__card-wrapper">
+            <li class="subscriptions__card subscription__card-first">
+              <h3 class="card__title">Students</h3>
+              <p class="card__price"><span>&#36;</span>29</p>
+              <p class="card__text">per month</p>
+              <p class="card__desc">Personal License</p>
+              <a href="#" class="card__btn">purchase</a>
+            </li>
+            <li class="subscriptions__card subscription__card-second">
+              <h3 class="card__title">professional</h3>
+              <p class="card__price"><span>&#36;</span>59</p>
+              <p class="card__text">per Month</p>
+              <p class="card__desc">Professional License<br />Email Support</p>
+              <a href="#" class="card__btn">purchase</a>
+            </li>
+            <li class="subscriptions__card subscription__card-third subscription__card--active">
+              <h3 class="card__title card__title--active">agency</h3>
+              <p class="card__price card__price--active"><span>&#36;</span>99</p>
+              <p class="card__text card__text--active">per Month</p>
+              <p class="card__desc card__desc--active">1-12 Team Members<br />Phone Support</p>
+              <a href="#" class="card__btn card__btn--active">purchase</a>
+            </li>
+            <li class="subscriptions__card subscription__card-fourth">
+              <h3 class="card__title">enterprise</h3>
+              <p class="card__price"><span>&#36;</span>159</p>
+              <p class="card__text">per Month</p>
+              <p class="card__desc">Unlimited Team Members<br />24/ 7 Phone Support</p>
+              <a href="#" class="card__btn">purchase</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script src="./js/scripts.min.js"></script>
+  </body>
+</html>
